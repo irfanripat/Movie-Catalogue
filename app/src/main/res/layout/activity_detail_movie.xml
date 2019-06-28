@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailMovieActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_margin"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg">
+
+            <ImageView
+                android:id="@+id/img_foto"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                tools:src="@drawable/poster_themule"/>
+
+            <TextView
+                android:id="@+id/txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title : "
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/open_sans"
+                android:textColor="@android:color/black"
+                android:layout_toRightOf="@id/img_foto"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:id="@+id/item_judul_film"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_below="@id/txt"
+                android:layout_toRightOf="@id/img_foto"
+                android:textSize="20sp"
+                android:layout_marginTop="5dp"
+                android:textColor="@android:color/black"
+                android:fontFamily="@font/open_sans_semibold"
+                tools:text="The Mule"/>
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_judul_film"
+                android:text="Premiere :"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/open_sans"
+                android:textColor="@android:color/black"
+                android:layout_toRightOf="@id/img_foto"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:id="@+id/item_tgl_rilis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_below="@id/txt1"
+                android:layout_toRightOf="@id/img_foto"
+                android:textSize="20sp"
+                android:layout_marginTop="5dp"
+                android:textColor="@android:color/black"
+                android:fontFamily="@font/open_sans_semibold"
+                tools:text="May 13, 2000"/>
+
+            <TextView
+            android:id="@+id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_tgl_rilis"
+            android:text="User Score :"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/open_sans"
+            android:textColor="@android:color/black"
+            android:layout_toRightOf="@id/img_foto"
+            android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:id="@+id/item_user_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_below="@id/txt2"
+                android:layout_toRightOf="@id/img_foto"
+                android:textSize="20sp"
+                android:layout_marginTop="5dp"
+                android:textColor="@android:color/black"
+                android:fontFamily="@font/open_sans_semibold"
+                tools:text="100%"/>
+
+            <TextView
+                android:id="@+id/txt5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_user_score"
+                android:text="Runtime :"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/open_sans"
+                android:textColor="@android:color/black"
+                android:layout_toRightOf="@id/img_foto"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:id="@+id/item_durasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_below="@id/txt5"
+                android:layout_toRightOf="@id/img_foto"
+                android:textSize="20sp"
+                android:layout_marginTop="5dp"
+                android:textColor="@android:color/black"
+                android:fontFamily="@font/open_sans_semibold"
+                tools:text="1h 20m"/>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginTop="35dp"
+            android:id="@+id/txt4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cast :"
+            android:fontFamily="@font/open_sans_semibold"
+            android:textSize="17sp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/item_karakter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/open_sans"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras porttitor dolor sed quam sodales" />
+
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="Overview :"
+            android:textColor="@android:color/black"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/item_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/open_sans"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras porttitor dolor sed quam sodales, vitae placerat orci tincidunt. Mauris porta libero nibh, ac dignissim sem finibus eget. Donec ut eros risus. Ut in nibh eu libero suscipit egestas. Integer mauris magna, feugiat vel ligula nec, vehicula ultrices elit. Nullam dictum, metus ac ornare dapibus, mi erat finibus justo, ut commodo nisl odio a enim. Nam aliquam non sapien ac mattis. Nulla et ligula ac elit vulputate feugiat tincidunt sit amet sapien. Proin ut orci nec libero pellentesque tempor. Nulla congue tortor id ligula facilisis, ut laoreet ante posuere. Nullam molestie egestas tincidunt. In hac habitasse platea dictumst. Proin id volutpat mi." />
+
+    </LinearLayout>
+</ScrollView>
