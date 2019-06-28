@@ -44,7 +44,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/tv_tgl_rilis"
         android:layout_marginStart="25dp"
-        android:layout_toRightOf="@id/img_foto"
+        android:layout_toEndOf="@id/img_foto"
         android:fontFamily="@font/open_sans"
         android:maxLines="3"
         android:textSize="14.4sp"

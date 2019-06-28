@@ -3,6 +3,7 @@
     <string name="test_name">Aquaman</string>
     <string name="test_tgl">Desember 7, 2018</string>
     <string name="test_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur scelerisque risus id convallis tempor. Suspendisse potenti. Proin et congue quam. Aenean vitae mi ut lacus congue posuere. Nulla facilisi. Aenean vel placerat purus. Pellentesque ut ante eget erat faucibus volutpat. Quisque ut magna sodales nibh tincidunt ultricies. In sagittis justo eget euismod commodo.</string>
+    <string name="cover_movie">Cover Movie</string>
 
     <array name="data_nama">
         <item>A Star Is Born</item>

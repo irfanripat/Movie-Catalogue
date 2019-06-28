@@ -11,12 +11,8 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 public class MovieAdapter extends BaseAdapter {
-    private Context context;
+    private final Context context;
     private ArrayList<Movie> movies;
-
-    public ArrayList<Movie> getMovies() {
-        return movies;
-    }
 
     public void setMovies(ArrayList<Movie> movies) {
         this.movies = movies;
@@ -26,7 +22,6 @@ public class MovieAdapter extends BaseAdapter {
         this.context = context;
         movies = new ArrayList<>();
     }
-
 
     @Override
     public int getCount() {
@@ -48,12 +43,10 @@ public class MovieAdapter extends BaseAdapter {
         if (view == null) {
             view = LayoutInflater.from(context).inflate(R.layout.item_movie, viewGroup, false);
         }
-
         ViewHolder viewHolder = new ViewHolder(view);
         Movie movie = (Movie) getItem(i);
         viewHolder.bind(movie);
         return view;
-
     }
 
     private class ViewHolder {

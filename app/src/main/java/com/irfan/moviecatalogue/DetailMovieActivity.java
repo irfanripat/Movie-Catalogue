@@ -9,8 +9,8 @@ import com.budiyev.android.circularprogressbar.CircularProgressBar;
 
 public class DetailMovieActivity extends AppCompatActivity {
 
-    TextView itemJudulFilm, itemTglRilis, itemUserScore, itemDurasi, itemKarakter, itemDeskripsi;
-    ImageView imgFoto;
+    private TextView itemJudulFilm, itemTglRilis, itemUserScore, itemDurasi, itemKarakter, itemDeskripsi;
+    private ImageView imgFoto;
     public static final String EXTRA_MOVIE = "extra_movie";
 
     @Override
